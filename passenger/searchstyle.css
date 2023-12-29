@@ -1,0 +1,56 @@
+/* searchstyle.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  margin: 20px;
+}
+
+select,
+input {
+  padding: 10px;
+  margin: 5px;
+  font-size: 16px;
+}
+
+.search {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.flightlink {
+  text-decoration: none;
+  color: #333;
+  border: 1px solid #ccc;
+  display: block;
+  padding: 10px;
+  margin: 10px;
+  background-color: #fff;
+}
+
+.from,
+.to {
+  font-weight: bold;
+}
+.select-style {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 5px;
+  width: 200px; /* Adjust the width as needed */
+}

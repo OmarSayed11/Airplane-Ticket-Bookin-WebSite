@@ -1,0 +1,949 @@
+body {
+  background-color: #65656575;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  margin: 0;
+}
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #0f3460;
+}
+ul {
+  list-style: none;
+}
+.footer {
+  background-color: #0f3460;
+  padding: 20px 0;
+  margin-top: 200px;
+}
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+/*responsive*/
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+}
+.navvv {
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #0f3460;
+  padding: 10px 20px;
+  height: 60px;
+}
+
+.navvv .logo {
+  display: flex;
+  align-items: center;
+}
+.navvv .logo .icon {
+  width: 60px;
+  height: 60px;
+  margin-top: 10px;
+  margin-right: 20px;
+  border-radius: 15px;
+}
+.navvv .logo .icon img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.navvv .compname {
+  font-size: 25px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.navvv .info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.navvv .info .home {
+  margin: 0 10px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-right: 40px;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+  background-color: #0f3460;
+  transition: 0.2s ease-in-out;
+}
+.mess {
+  background-color: #0f3460;
+  border: none;
+  margin: 0 10px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-right: 40px;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+  transition: 0.2s ease-in-out;
+}
+.logout {
+  background-color: #0f3460;
+  border: none;
+  margin: 0 10px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-right: 40px;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+  transition: 0.2s ease-in-out;
+}
+
+.navvv .info .home:hover,
+.navvv .info .mess:hover,
+.navvv .info .logout:hover {
+  border-bottom: 2px solid #e91e63; /* Adjust the border color as needed */
+}
+/* .navvv .info .hom {
+  } */
+.buttons {
+  position: relative;
+  top: -20px;
+}
+.buttons a {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border-radius: 50px;
+  background-color: lightgreen;
+}
+p {
+  margin-top: 100px;
+}
+.ticcontainer {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping to the next line */
+  justify-content: space-around;
+  margin-top: 200px;
+}
+
+.ticket {
+  width: calc(
+    33.33% - 100px
+  ); /* Set width for three tickets per row with some margin */
+  margin-top: 60px;
+  /* Adjust margin based on your design */
+  height: 130px;
+  border-radius: 15px;
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: white;
+  text-decoration: none;
+  position: relative;
+  padding: 20px;
+  transition: 0.2s ease-in-out;
+}
+
+.ticket:hover {
+  box-shadow: 4px 6px rgba(0, 0, 0, 0.474);
+}
+
+.logoimgg {
+  width: 110px;
+  border-radius: 15px;
+  height: auto;
+  margin-top: 40px;
+}
+
+.logoimgg img {
+  border-radius: 15px;
+  width: 100%;
+}
+
+.fromtickt {
+  margin-top: 30px;
+  color: black;
+}
+
+.fromtickt .starttime {
+  font-weight: bold;
+  font-size: 21px;
+}
+
+.fromtickt .from {
+  margin-left: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(128, 128, 128, 0.838);
+}
+
+.ticket .iconnn {
+  width: 25px;
+  height: 25px;
+  margin-right: 45px;
+  margin-top: 35px;
+}
+
+.fromtickt .startdate,
+.fromtickt .enddate {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(128, 128, 128, 0.838);
+}
+
+.fromtickt .endtime {
+  font-weight: bold;
+  font-size: 21px;
+}
+.aboutcont {
+  width: 100%;
+  height: 700px;
+  margin: auto;
+  margin-top: 160px;
+  position: relative;
+  background-color: white;
+}
+.aboutimggg {
+  width: 600px;
+  height: 700px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 180px;
+}
+.abouttcontt {
+  width: 620px;
+  height: 631px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  position: absolute;
+  right: 140px;
+  top: 50px;
+  border: 1px solid #65656575;
+  justify-content: center;
+}
+.textabout {
+  color: greenyellow;
+  margin-left: 50px;
+
+  font-size: larger;
+  font-weight: 800;
+}
+.abouth {
+  margin-left: 50px;
+}
+.aboutd {
+  margin-left: 50px;
+}
+.aboutimg {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
+}
+.book {
+  background-color: #7ab730;
+  width: 100px;
+  height: 35px;
+  justify-content: center;
+  vertical-align: middle;
+  font-weight: 500;
+  line-height: 2.3;
+  text-align: center;
+  margin-left: 50px;
+  text-decoration: none;
+  color: white;
+
+  margin-top: 30px;
+}
+
+.flighttick {
+  width: 400px;
+  height: 230px;
+  border-radius: 15px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  background-color: white;
+  text-decoration: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  position: relative;
+  justify-content: space-between;
+  padding: 20px;
+  transition: 0.3s ease-in-out;
+}
+.flighttick:hover {
+  box-shadow: 4px 6px rgba(0, 0, 0, 0.474);
+}
+.flighttick .logimgg {
+  width: 110px;
+  border-radius: 15px;
+  height: auto;
+  margin-top: 40px;
+}
+.flighttick .logimgg img {
+  border-radius: 15px;
+  width: 100%;
+}
+.fromttt {
+  margin-top: 30px;
+  color: black;
+}
+.fromttt .starttime {
+  font-weight: bold;
+  font-size: 21px;
+}
+.fromttt .from {
+  margin-left: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(128, 128, 128, 0.838);
+}
+.flighttick .iconnn {
+  width: 25px;
+  height: 25px;
+  margin-right: 45px;
+  margin-top: 35px;
+}
+.flighttick .numpasspen {
+  position: absolute;
+  bottom: 120px;
+  font-weight: bold;
+  color: #0f3460;
+}
+.flighttick .numpassreg {
+  position: absolute;
+  font-weight: bold;
+  color: #0f3460;
+  bottom: 100px;
+}
+.flighttick .fees {
+  position: absolute;
+  font-weight: bold;
+  color: #0f3460;
+  bottom: 80px;
+}
+.flighttick .aaa {
+  position: absolute;
+  font-weight: bold;
+  color: #0f3460;
+  bottom: 60px;
+}
+.flighttick .completed {
+  position: absolute;
+  font-weight: bold;
+  color: #0f3460;
+  bottom: 40px;
+}
+.fromttt .startdate {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(128, 128, 128, 0.838);
+}
+.fromttt .enddate {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(128, 128, 128, 0.838);
+}
+.fromttt .endtime {
+  font-weight: bold;
+  font-size: 21px;
+}
+.cancelbtn {
+  text-decoration: none;
+  background-color: red;
+  text-align: center;
+  color: white;
+  width: 110px;
+  text-align: center;
+  justify-content: center;
+  line-height: 2rem;
+  position: absolute;
+  border-radius: 10px;
+  height: 30px;
+  right: 10px;
+  bottom: 5px;
+  font-size: 12.9px;
+  font-weight: bold;
+  transition: 0.2s ease-in-out;
+}
+.cancelbtn:hover {
+  background-color: rgb(196, 6, 6);
+}
+.setcomp {
+  width: 120px;
+  height: 30px;
+  bottom: 5px;
+  background-color: rgb(81, 211, 81);
+  border: none;
+  border-radius: 10px;
+  font-size: 12.9px;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  transition: 0.2s ease-in-out;
+}
+.setcomp:hover {
+  background-color: rgb(48, 164, 42);
+}
+/* Add these styles to your existing CSS */
+
+.custom-form {
+  max-width: 400px;
+  margin-top: 140px;
+  margin-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.lab {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #084b9e;
+}
+
+.inpp,
+.inpp[type="file"] {
+  display: block;
+  padding: 14.5px;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  font-size: 15px;
+  outline: none;
+  background-color: #9191911f;
+  color: #e91e63;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.inpp:focus {
+  box-shadow: 0 0 16px 1px rgba(0, 0, 0, 0.2);
+  animation: wobble 0.3s ease-in;
+}
+
+.subbb {
+  background-color: #e91e63;
+  color: #ffffff;
+  display: block;
+  padding: 13px;
+  border-radius: 5px;
+  outline: none;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+  border: none;
+}
+
+.subbb:hover {
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.15);
+  transform: scale(1.02);
+}
+.disccc {
+  position: absolute;
+  display: flex;
+  left: 80px;
+  top: 120px;
+  flex-direction: column;
+}
+.dad {
+  display: block;
+}
+
+.disccc .add {
+  font-weight: bold;
+  font-size: 50px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #e91e63;
+  margin-bottom: -30px; /* Adjust this value to decrease the space */
+}
+
+.disccc .addf {
+  font-weight: bold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 60px;
+  margin-bottom: 20px;
+  color: #084b9e;
+}
+.slidercontainer {
+  position: relative;
+  overflow: hidden;
+  margin-top: 40px;
+}
+.bk {
+  position: absolute;
+  bottom: 35px;
+  left: 48%;
+  border-radius: 10px;
+  cursor: pointer;
+  transform: translateX(-55%);
+  transition: 0.2s ease-in-out;
+}
+.bk :hover {
+  box-shadow: 4px 6px rgba(0, 0, 0, 0.474);
+}
+.slider-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  position: relative;
+}
+
+.sliderrr {
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.sliderrr img {
+  width: 100%;
+  object-fit: cover;
+}
+.msgform {
+  align-items: center;
+  position: absolute;
+  top: 80px;
+  right: 100px;
+  display: none;
+  width: 600px;
+  border-radius: 10px;
+  z-index: 600;
+  height: auto;
+  overflow-y: none;
+  flex-direction: column;
+  border: 2px solid black;
+  background-color: white;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+.msgcont {
+  border: 2px solid #ccc;
+  padding: 10px;
+  width: 80%;
+  margin-bottom: 15px;
+  margin-top: 22px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  color: #084b9e;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  transition: 0.2s ease-in-out;
+}
+.msgcont:hover {
+  box-shadow: 4px 6px rgba(0, 0, 0, 0.474);
+}
+.msgcont b {
+  color: #e91e63;
+}
+.msgcont div {
+  margin-bottom: 8px;
+}
+
+.msgcont input[type="text"] {
+  display: block;
+  padding: 14.5px;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  font-size: 15px;
+  outline: none;
+  background-color: #9191911f;
+  color: #e91e63;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.msgcont input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.msgcont input[type="submit"]:hover {
+  background-color: #45a049;
+}
+.select-style {
+  display: block;
+  padding: 14.5px;
+  width: 250px;
+  height: 60px;
+  margin-left: 80px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  font-size: 15px;
+  outline: none;
+  background-color: #9191911f;
+  color: #e91e63;
+  font-weight: bold;
+  cursor: pointer;
+}
+.searchhh {
+  background-color: white;
+  width: 100%;
+  margin-top: 80px;
+  display: flex;
+
+  flex-wrap: nowrap;
+  align-items: center;
+  text-align: center;
+  flex-direction: row;
+  height: 90px;
+}
+.searchhh label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 35px;
+  margin-left: 60px;
+  font-weight: bold;
+  color: #084b9e;
+  height: 50px;
+}
+.searchhh input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  width: 150px;
+  margin-bottom: 10px;
+  height: 55px;
+  margin-left: 60px;
+  font-size: 21px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.searchhh input[type="submit"]:hover {
+  background-color: #45a049;
+}
+.searchhh select option {
+  width: auto;
+  height: 80px;
+  font-size: 16px;
+}
+.profile-container {
+  max-width: 600px;
+
+  margin-top: 98px;
+  margin-left: 400px;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-container div {
+  margin-bottom: 10px;
+}
+
+.profile-container div label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.profile-container div input,
+.profile-container div select {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.profile-container div textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  resize: vertical;
+}
+
+.profile-container div button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.profile-container div button:hover {
+  background-color: #45a049;
+}
+.paymenttt {
+  position: absolute;
+  bottom: 5px;
+  font-weight: bold;
+  color: #0f3460;
+}
+.paymenttt input {
+  background-color: #4caf50;
+  color: #fff;
+  height: 30px;
+  border: none;
+  margin-left: 25px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.paymenttt select {
+  width: 140px;
+  height: 30px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  margin-left: 20px;
+  font-size: 15px;
+
+  background-color: #9191911f;
+  color: #e91e63;
+  font-weight: bold;
+  cursor: pointer;
+}
+.labbb {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #084b9e;
+}
+.hh {
+  align-items: center;
+  position: absolute;
+  top: 80px;
+  right: 100px;
+  display: none;
+  width: 600px;
+  z-index: 600;
+  font-size: 20px;
+  height: 300px;
+  overflow-y: none;
+  flex-direction: column;
+  border: 2px solid black;
+  background-color: white;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+.msgcontainer {
+  border-radius: 10px;
+  border: 2px solid grey;
+  margin-top: 10px;
+  width: 90%;
+  transition: 0.2s ease-in-out;
+}
+.msgcontainer:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+.ssinp {
+  padding: 14.5px;
+  width: 60%;
+
+  box-sizing: border-box;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  font-size: 15px;
+  outline: none;
+  background-color: #9191919a;
+  color: #e91e63;
+  font-weight: bold;
+  cursor: pointer;
+}
+.comps {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+}
+.compss {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  margin-top: 40px;
+}
+.messg {
+  padding: 14.5px;
+  width: 58%;
+
+  box-sizing: border-box;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  font-size: 15px;
+  outline: none;
+  margin-left: 40px;
+  background-color: #919191a8;
+  color: #e91e63;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.hh input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.hh input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.hbl {
+  display: flex;
+  flex-direction: row;
+  height: 150px;
+  width: 100%;
+  background-color: white;
+  margin-top: 80px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hblo {
+  display: flex;
+  flex-direction: row;
+}
+
+.hblimg {
+  width: 100px;
+  height: 100px;
+  margin-top: 15px;
+}
+
+.hblo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hblo > div {
+  display: flex;
+  flex-direction: column;
+  font-size: 23px;
+  margin-left: 20px;
+}
+
+.xxx {
+  font-weight: bold;
+  font-size: 23px;
+}
+
+.hbldisc {
+  margin-top: 5px;
+  font-size: medium;
+}
